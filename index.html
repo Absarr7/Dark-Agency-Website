@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="CSS/style.css">
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -232,9 +235,103 @@
 
     <!-- --------- END OF FAQ SECTION ---------- -->
 
+    <!-- TESTIMONIALS SECTION -->
 
+    <section class="container testimonials_container mySwiper">
+        <h2>Students' Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="Images/avatar1.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eius doloribus, cupiditate nemo illum deleniti neque dolor impedit doloremque! Vero.</p>
+                </div>
+            </article>
 
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="Images/avatar2.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Ernest Achiever</h5>
+                    <small>Web Developer</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eius doloribus, cupiditate nemo illum deleniti neque dolor impedit doloremque! Vero.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="Images/avatar3.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Edem Quist</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eius doloribus, cupiditate nemo illum deleniti neque dolor impedit doloremque! Vero.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="Images/avatar4.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Dhruv Rathee</h5>
+                    <small>Youtuber</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eius doloribus, cupiditate nemo illum deleniti neque dolor impedit doloremque! Vero.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="Images/avatar5.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Anna James</h5>
+                    <small>Software Developer</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eius doloribus, cupiditate nemo illum deleniti neque dolor impedit doloremque! Vero.</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="JS/script.js"></script>
+
+
+
+    <!-- ------------- Testimonials JS -------------------- -->
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // when window width is >= 600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+
 </body>
 
 </html>
